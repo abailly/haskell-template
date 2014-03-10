@@ -1,13 +1,6 @@
 module Main(main) where
 
-import System.Environment
-
-
-import YakCli
+import System.Environment(getArgs)
 
 main :: IO ()
-main =
-    getArgs              >>=
-    return . makeOptions >>=
-    outputCfdData        >>=
-    mapM_ (putStrLn.show)
+main = getArgs >>= putStrLn . ("Hello World!: " ++) . show

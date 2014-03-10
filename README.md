@@ -1,3 +1,3 @@
 # Introduction
 
-{{description}}
+{{project.synopsis}}
