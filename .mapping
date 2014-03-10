@@ -1,0 +1,3 @@
+[("project.cabal"       , "{{project.name}}.cabal"),
+ ("project.hs"      , "{{project.name}}.hs"),
+ ("project-test.hs" , "{{project.name}}-test.hs")]

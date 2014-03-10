@@ -1,0 +1,21 @@
+Name:                 {{project.name}}
+Version:              {{project.version}}
+Build-type:           Simple
+Synopsis:             {{project.synopsis}}
+License:              BSD3
+License-file:         LICENSE
+{{#project.authors}}Author:               {{author.name}}{{/project.authors}}
+Build-Depends:        base
+Cabal-version:        >= 1.2
+
+Executable {{project.name}}
+  build-depends:      base
+  hs-source-dirs:     src
+  main-is:            {{project.name}}.hs
+  ghc-options:        -Wall
+
+Test-Suite {{project.name}}-test
+    type:          exitcode-stdio-1.0
+    main-is:       {{project.name}}-test.hs
+    build-depends: base
+
