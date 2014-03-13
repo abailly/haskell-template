@@ -15,7 +15,8 @@ Executable {{project.name}}
   ghc-options:        -Wall
 
 Test-Suite {{project.name}}-test
-    type:          exitcode-stdio-1.0
-    main-is:       {{project.name}}-test.hs
-    build-depends: base
+    type:             exitcode-stdio-1.0
+    hs-source-dirs:   test
+    main-is:          {{project.name}}-test.hs
+    build-depends:    base
 
