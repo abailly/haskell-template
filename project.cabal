@@ -18,5 +18,6 @@ Test-Suite {{project.name}}-test
     type:             exitcode-stdio-1.0
     hs-source-dirs:   test
     main-is:          {{project.name}}-test.hs
-    build-depends:    base
+    build-depends:    base,
+                      doctest == 0.9.10
 
